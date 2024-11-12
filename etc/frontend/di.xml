@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <preference type="DMTQ\GoogleTagManager\Model\Data\SessionDataProvider" for="DMTQ\GoogleTagManager\Model\Data\DataProviderInterface"/>
+
+    <type name="Magento\Customer\CustomerData\Customer">
+        <plugin name="dmtq_gtm_customer" type="DMTQ\GoogleTagManager\Plugin\CustomerData\CustomerPlugin" />
+    </type>
+    <type name="Magento\Checkout\CustomerData\ItemPoolInterface">
+        <plugin name="dmtq_gtm_item_data" type="DMTQ\GoogleTagManager\Plugin\CustomerData\ItemPoolPlugin" />
+    </type>
+    <type name="Magento\Checkout\CustomerData\Cart">
+        <plugin name="dmtq_gtm_customer_cart" type="DMTQ\GoogleTagManager\Plugin\CustomerData\CartPlugin" />
+    </type>
+</config>

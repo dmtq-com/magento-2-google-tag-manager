@@ -1,0 +1,21 @@
+{
+    "name": "dmtq/magento-2-google-tag-manager",
+    "description": "Magento2 google tag manager module, A simple, clear and fully functional GA module. Compatible with breeze theme.",
+    "type": "magento2-module",
+    "license": "GPL-3.0",
+    "minimum-stability": "dev",
+    "version": "1.0.0",
+    "require": {
+        "magento/framework": "*",
+        "dmtq/module-core": "*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "DMTQ\\GoogleTagManager\\": ""
+        }
+    }
+}
+
